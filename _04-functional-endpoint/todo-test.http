@@ -1,0 +1,35 @@
+### [CREATE] Todo 생성
+POST http://localhost:8080/todos
+Content-Type: application/json
+
+{
+  "description": "할 일 1",
+  "status": "TODO"
+}
+
+###
+
+### [GET] 전체 Todo 목록 조회
+GET http://localhost:8080/todos
+
+###
+
+### [GET] 특정 Todo 조회
+GET http://localhost:8080/todos/67f41d34cf5eae0ba4ed6127
+
+###
+
+### [UPDATE] Todo 수정
+PUT http://localhost:8080/todos/67f41d34cf5eae0ba4ed6127
+Content-Type: application/json
+
+{
+  "description": "할 일 1 수정됨",
+  "status": "IN_PROGRESS"
+}
+
+###
+
+### [DELETE] Todo 삭제
+DELETE http://localhost:8080/todos/{{todoId}}
+

@@ -1,0 +1,30 @@
+### Create Member
+POST http://localhost:8080/members
+Content-Type: application/json
+
+{
+  "name": "강태현",
+  "email": "taehyun@example.com",
+  "nickname": "먹태",
+  "age": 25
+}
+
+### Get All Members
+GET http://localhost:8080/members
+
+### Get One Member by Email (ID 대신 Email이 PathVariable로 되어있음)
+GET http://localhost:8080/members/taehyun@example.com
+
+### Update Member
+PUT http://localhost:8080/members/taehyun@example.com
+Content-Type: application/json
+
+{
+  "name": "강태현",
+  "email": "taehyun@example.com",
+  "nickname": "태현이",
+  "age": 26
+}
+
+### Delete Member
+DELETE http://localhost:8080/members/67f3d34da5b6fa024f20c9fa

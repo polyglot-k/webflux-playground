@@ -1,0 +1,6 @@
+rootProject.name = 'webflux-playground'
+include '_01-hello-webflux'
+include '_02-router-handler'
+include '_03-reactive-crud'
+include '_04-functional-endpoint'
+

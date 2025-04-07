@@ -1,0 +1,27 @@
+###
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "email": "kk@naver.com",
+  "name": "kth"
+}
+
+###
+POST http://localhost:8080/posts
+Content-Type: application/json
+
+{
+  "title": "Hello 1d1d2dworld",
+  "content": "ddddfff",
+  "userId": "67f4377dfe5f020dc0bfe01b"
+}
+
+###
+
+###
+GET http://localhost:8080/users
+
+
+###
+GET http://localhost:8080/posts?userid=67f4377dfe5f020dc0bfe01b
